@@ -7,7 +7,7 @@ const attributes = [
     {"id":"first_name","description":"First Name"},
     {"id":"last_name","description":"First Name"},
     {"id":"groups","description":"User groups separated by collon (:), typically taken from the LDAP or AD"},
-	{"id":"language","description":"Favroite Language"},
+	{"id":"language","description":"Favorite Language"},
     {"id":"host","description":"Application Host"},
   ];
 
