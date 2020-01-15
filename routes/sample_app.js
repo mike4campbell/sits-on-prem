@@ -7,6 +7,7 @@ const attributes = [
     {"id":"first_name","description":"First Name"},
     {"id":"last_name","description":"First Name"},
     {"id":"groups","description":"User groups separated by collon (:), typically taken from the LDAP or AD"},
+	{"id":"language","description":"Favroite Language"},
     {"id":"host","description":"Application Host"},
   ];
 
@@ -21,6 +22,7 @@ router.get(Array.from(urls.keys()),[
   header('first_name').not().isEmpty(),
   header('last_name').not().isEmpty(),
   header('groups').not().isEmpty(),
+  header('language').not().isEmpty(),
   header('host').not().isEmpty(),
 ], (req, res) => {
   const errors = validationResult(req);
